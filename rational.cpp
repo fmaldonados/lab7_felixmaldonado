@@ -44,7 +44,7 @@ const rational& rational:: simplificar(){
                                         denominator/=i;
                                 }
                         }
-                }else{
+        }else{
                          for(int i=denominator;i>=1;i++){
                                 if(numerator%i==0 && denominator%i==0){
                                         numerator/=i;
