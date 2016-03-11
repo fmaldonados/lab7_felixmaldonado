@@ -52,8 +52,9 @@ int main(int argc,char* argv[]){
 				
 				
 				rational respuesta = racionales[operando1 -1] + racionales[operando2 -1];
-				respuesta.simplificar();
+				
 				cout<< "Calculando..."<<endl;
+				respuesta.simplificar();
 				cout<< "La respuesta es: "<<respuesta<<endl;
 				
 				stringstream ss;
@@ -71,8 +72,8 @@ int main(int argc,char* argv[]){
                                 	cin>>operando2;
 
                                 	rational respuesta = racionales[operando1 -1] - racionales[operando2 -1];
-                                	respuesta.simplificar();
 					cout<< "Calculando..."<<endl;
+					respuesta.simplificar();
 					cout<< "La respuesta es: "<<respuesta<<endl;
 					stringstream ss;
                                         ss<<racionales[operando1 -1]<<" - "<< racionales[operando2 -1]<<" = "<<respuesta;
@@ -90,8 +91,8 @@ int main(int argc,char* argv[]){
 
                                 		rational respuesta;
                                 		respuesta = racionales[operando1 -1] * racionales[operando2 -1];
+						cout<< "Calculando...";
 						respuesta.simplificar();
-						cout<< "Calculando..."<<endl;
                                 		cout<< "La respuesta es: "<<respuesta<<endl;
 						
 						stringstream ss;
@@ -110,8 +111,8 @@ int main(int argc,char* argv[]){
 
                                 			rational respuesta;
                                 			respuesta = racionales[operando1 -1] / racionales[operando2 -1];
-							respuesta.simplificar();
 							cout<< "Calculando..."<<endl;
+							respuesta.simplificar();
                                 			cout<< "La respuesta es: "<<respuesta<<endl;
 
 							stringstream ss;
